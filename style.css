@@ -30,7 +30,7 @@ h1 {
 }
 .nav-li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 10 10px;
 }
 a {
   text-decoration: underline dotted 5px rgb(9, 213, 228);
@@ -54,11 +54,12 @@ main {
 .content {
   flex: 1;
   padding: 15px;
+
 }
 
 /* portfolio styles */
 #interests {
-  border: 9px rgb(120, 188, 240) outset;
+  border: 12px rgb(120, 188, 240) outset;
   padding: 8px;
 }
 h2,

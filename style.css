@@ -56,8 +56,6 @@ main {
   padding: 15px;
 
 }
-
-/* portfolio styles */
 #interests {
   border: 12px rgb(120, 188, 240) outset;
   padding: 8px;
@@ -65,4 +63,29 @@ main {
 h2,
 h3 {
   margin: 10px;
+}
+/* portfolio styles */
+.content h1 {
+  color: rgb(49, 27, 145);
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #5db0d1;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #5e4bc5;
 }

@@ -71,21 +71,71 @@ h3 {
 
 #portfolio {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 100;
 }
 
 #portfolio li {
   background: #fff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-  background: #5db0d1;
+  background: #8ff1c3;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #5e4bc5;
+  color: #9787ee;
+}
+
+  /* responsive web design */
+  @media screen and (min-width: 120px) and (max-width: 1080px) {
+    main {
+      height: 100ch;
+      zoom: 1.5;
+      display: grid;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    #all-contents {
+      height: 100ch;
+      margin: none;
+    }
+
+    a {
+      font-size: 42px;
+    }
+
+    .sidebar {
+      margin-right: 0px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sidebar-img {
+      width: 100%;
+    }
+
+    p,
+    li {
+      font-size: 24px;
+    }
+
+    .content {
+      align-content: center;
+      justify-content: center;
+    }
 }

@@ -64,9 +64,9 @@ createCollectable("kennedi", 350, 200, 0, 0.5);
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-createCannon("top", 600, 100, 50);
-createCannon("top", "right", 600, 100, 50);
-createCannon("bottom", "left", 600, 100, 50);
+createCannon("top", 650, 1500, 50);
+createCannon("bottom", 1115, 1600, 50);
+createCannon("top", 430, 800, 50);
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////

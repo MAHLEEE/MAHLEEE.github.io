@@ -66,7 +66,7 @@ createCollectable("kennedi", 350, 200, 0, 0.5);
     // example usage: createCannon(side, position, delay, width, height)
 createCannon("top", 650, 1500, 50);
 createCannon("bottom", 1115, 1600, 50);
-createCannon("top", 430, 800, 50);
+createCannon("bottom", 200, 800, 50);
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////

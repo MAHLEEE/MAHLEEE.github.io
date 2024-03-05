@@ -6,16 +6,16 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
-			font-size: 300%;
+			width: 90px;
+			height: 90px;
+			background-color: rgb(161, 225, 241);
+			font-size: 450%;
 			text-align: center;
 			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 400px;  /* <--- Change me! */
+			left: 0px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -65,6 +65,8 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10;
+			var positonY = 0;
+			var speedY = 5;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -72,11 +74,23 @@
 			*/
 			function update() {
 			/* Your Code to Increase positionX by 10 HERE */
-				positionX = positionX + 10;
-
-				moveBoxTo(positionX);
+				positionY = speedY + positionY
+				positionX = positionX + speed;
+				moveBoxTo(positionX, positonY);
 				
-			};
+				
+				
+				if (positionX > boardwidth) {
+					speed = speed * -1;
+				}
+				if (positonX < 0){
+				speed = speed * -1	
+				}
+				if ( positonY > boardHeight) {
+					speed = speed * 1
+				}
+				
+			}; 
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -87,7 +101,7 @@
 				positionX = 0;
 				points = points + 1;
 				changeBoxText(points);
-
+				 speed = speed + 3 
 
 			};
 		})();

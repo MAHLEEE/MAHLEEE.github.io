@@ -67,6 +67,7 @@
 			var speed = 10;
 			var positionY = 0;
 			var speedY = 5;
+			var boardHeight = jQuery(window).height();
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -76,18 +77,18 @@
 			/* Your Code to Increase positionX by 10 HERE */
 				positionY = speedY + positionY
 				positionX = positionX + speed;
-				moveBoxTo(positionX, positonY);
+				moveBoxTo(positionX, positionY);
 				
 				
 				
 				if (positionX > boardwidth) {
-					speed = speed * -1;
+					speedY = speed * -1;
 				}
-				if (positonX < 0){
-				speed = speed * -1	
+				if (positionX < 0){
+				speedY = speed * -1	
 				}
-				if ( positonY > boardHeight) {
-					speed = speed * 1
+				if ( positionY > boardHeight) {
+					speedY = speed * 1
 				}
 				
 			}; 

@@ -8,7 +8,7 @@
 		.box {
 			width: 90px;
 			height: 90px;
-			background-color: rgb(161, 225, 241);
+			background-color: rgb(139, 223, 235);
 			font-size: 450%;
 			text-align: center;
 			user-select: none;
@@ -19,6 +19,8 @@
 		}
 		.board{
 			height: 100vh;
+			background-image: url("https://i.pinimg.com/originals/9c/98/22/9c9822a872aadcc57e2dfb3be7866780.gif");
+  			background-color: #cccccc;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -27,7 +29,6 @@
 <body class="board">
 	<!-- HTML for the box -->
 	<div class="box">?</div>
-
 	<script>
 		(function(){
 			'use strict'
@@ -52,7 +53,6 @@
 			function moveBoxTo(newPositionX , newPositionY) {
 				box.css("left", newPositionX);
 				box.css("top", newPositionY)
-				box.css('background-color', colorStr);
 			}
 
 			// changes the text displayed on the Box
@@ -70,7 +70,7 @@
 			var speed = 10;
 			var speedY = 5;
 			var positionY = 0;
-			var colorStr = "rgb(50, 25, 250)";
+
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen

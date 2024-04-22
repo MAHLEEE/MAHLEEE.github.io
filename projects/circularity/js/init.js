@@ -33,12 +33,7 @@ var init = function (window) {
 
         // TODO 3 / 7 : Call the drawCircle() function 
         for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
-        function drawCircles(){
-            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-            physikz.addRandomVelocity(circle, canvas, 2.5, 2.5);
-            view.addChild(circle);
-            circles.push(circle);
-        }
+     drawCircles()
        }
        
 
@@ -67,9 +62,7 @@ var init = function (window) {
            game.checkCirclePosition(circles[4])
            
             // TODO 9 : Iterate over the array
-            for ( var count = 0; count < circles.length; i++){
-                
-            }
+            
             
         }
     
